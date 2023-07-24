@@ -1,5 +1,4 @@
 <?php 
-
 return [
-    "database"=> ["hostname" => "localhost", "dbname" => "demo"]
+    "database"=> ["hostname" => "localhost", "dbname" => "blog"]
 ];

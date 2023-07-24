@@ -1,5 +1,8 @@
 <?php 
 
+namespace Model;
+use PDO;
+
 class Database{
 
     private $dsn;
@@ -8,7 +11,7 @@ class Database{
 
     private $stmt;
     private $pdo;
-    public function __construct($config, $username, $password) {
+    public function __construct($config, $username = "root", $password = "") {
         $this->dsn  = "mysql:". http_build_query($config, "", ";");
         $this->username = $username;
         $this->password = $password;
